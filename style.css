@@ -1,0 +1,190 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: 'KyivType Titling';
+    src:url('fonts/KyivTypeTitling-Heavy3.woff2') format('woff2'),
+        url('fonts/KyivTypeTitling-Heavy3.woff') format('woff'),
+        url('fonts/KyivTypeTitling-Heavy3.ttf') format('truetype'),
+        url('fonts/KyivTypeTitling-Heavy3.otf') format('opentype');
+    font-weight: 1000;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyivType Sanse Bold';
+    src:url('fonts/KyivTypeSans-Heavy2.woff2') format('woff2'),
+        url('fonts/KyivTypeSans-Heavy2.woff') format('woff'),
+        url('fonts/KyivTypeSans-Heavy2.ttf') format('truetype'),
+        url('fonts/KyivTypeSans-Heavy2.otf') format('opentype');
+    font-weight: 1000;
+    font-style: normal;
+}
+.landingpage{
+    background-color: #00296B;
+}
+.landingfirst{
+    background-color: #FFF;
+}
+
+
+.landingfirst {
+    position: relative;
+    height: 100vh; /* Висота блоку */
+}
+
+.poly {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Висота фото */
+    width: auto; /* Ширина фото */
+    object-fit: cover; /* Зберігає пропорції фото */
+}
+
+.startplayersphoto {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2; /* Позиціонує фото гравців над прямокутником */
+    height: 90vh; /* Висота фото */
+    width: auto; /* Ширина фото */
+    object-fit: cover; /* Зберігає пропорції фото */
+    float: right;
+}
+
+.starphoto {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    z-index: 0; /* Позиціонує фото гравців над прямокутником */
+    height: 100vh; /* Висота фото */
+    width: auto; /* Ширина фото */
+    object-fit: cover; /* Зберігає пропорції фото */
+}
+
+
+
+.landingtitle{
+    position: absolute;
+    left: 0;
+    z-index: 1; /* Позиціонує фото гравців над прямокутником */
+    
+   
+}
+
+
+.landingtitle h1 {
+    margin: 0;
+    color: #FFF;
+    font-family: 'KyivType Titling', sans-serif;
+    font-size: 13vw; /* Змініть це значення відповідно до ваших потреб */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+.landingtitle h2 {
+    color: #FFD500;
+    font-family: 'KyivType Titling', sans-serif;
+    font-size: 15vh; /* Змініть це значення відповідно до ваших потреб */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.gotogame {
+    position: absolute;
+    left: 50%;
+    bottom: 20px; /* Змініть це значення відповідно до ваших потреб */
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    text-align: center;
+}
+
+
+.gotogame button{
+    border-radius: 40px;
+    background: #FFD500;
+    color: #00296B;
+    font-family: 'KyivType Titling', sans-serif;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+}
+.landingsecond{
+    width: 100%;
+}
+.landingsecondtext{
+    
+    width: 100%;
+}
+
+.landingsecondtext p{
+    font-family: 'KyivType Sanse Bold', sans-serif;
+
+    margin: 1% 5%;
+   
+    width: 90%;
+}
+.landingsecondtitle{
+    color: #ffd500;
+    font-size: 50px;
+
+}
+.landingsecondplain{
+    color: #ffffff;
+    font-size: 48px;
+
+}.landingsecondmarkered{
+    color: #ffd500;
+    font-size: 48px;
+
+}
+.cup{
+    width: 20%;
+    margin: 1% 40%;
+
+}
+
+.group {
+    position: fixed; /* Змініть на fixed, щоб елемент залишався на одному місці навіть при прокрутці */
+    bottom: 3%; /* Змініть top на bottom, щоб елемент був унизу екрану */
+    right: 3%; /* Змініть left на right, щоб елемент був справа */
+    width: 60px;
+    height: 60px;
+    background-color: #ffd500;
+    border-radius: 30px;
+}
+
+.expand-more {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 5px;
+  }
